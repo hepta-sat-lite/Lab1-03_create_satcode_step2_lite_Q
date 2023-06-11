@@ -1,6 +1,6 @@
 #include "mbed.h"
 DigitalOut condition[]={LED1, PB_1};
-Serial gs(USBTX,USBRX,9600);
+RawSerial gs(USBTX,USBRX,9600);
 Timer sattime;
 int rcmd = 0, cmdflag = 0; //command variable
 
