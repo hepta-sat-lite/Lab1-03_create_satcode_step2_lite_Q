@@ -1,5 +1,5 @@
 #include "mbed.h"
-DigitalOut condition[]={LED1, PB_1};
+DigitalOut condition[]={PB_1, PA_5};
 RawSerial gs(USBTX,USBRX,9600);
 Timer sattime;
 int rcmd = 0, cmdflag = 0; //command variable
@@ -45,7 +45,7 @@ int main()
         if(cmdflag == 1){
             if(rcmd == 'a'){
                 //Please insert your answer
-                
+                gs.printf("Hello Hepta sat lite!\r\n");
                 
                 
                 
