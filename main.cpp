@@ -40,7 +40,7 @@ int main()
         
         //Transmitting HK data to Ground Station(GS)
         gs.printf("HEPTASAT::Condition = %d, Time = %f [s], batvol = %2f [V], temp = %2f [deg C]\r\n",flag,sattime.read(),batvol,temp);
-        wait_ms(500);
+        wait_ms(1000);
         
         if(cmdflag == 1){
             if(rcmd == 'a'){
